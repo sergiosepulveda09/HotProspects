@@ -11,6 +11,7 @@
 		801C69F226CF82CF00107CF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C69F126CF82CF00107CF3 /* ContentView.swift */; };
 		801C69F426CF82D100107CF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801C69F326CF82D100107CF3 /* Assets.xcassets */; };
 		801C69F726CF82D100107CF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801C69F626CF82D100107CF3 /* Preview Assets.xcassets */; };
+		801C6A0026D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C69FF26D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		801C69F326CF82D100107CF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		801C69F626CF82D100107CF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		801C69F826CF82D100107CF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		801C69FF26D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingCustomValuesEnviromentObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		801C69EE26CF82CF00107CF3 /* HotProspects */ = {
 			isa = PBXGroup;
 			children = (
+				801C69FE26D44F3400107CF3 /* Theory */,
 				801C69EF26CF82CF00107CF3 /* HotProspectsApp.swift */,
 				801C69F126CF82CF00107CF3 /* ContentView.swift */,
 				801C69F326CF82D100107CF3 /* Assets.xcassets */,
@@ -67,6 +70,14 @@
 				801C69F626CF82D100107CF3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		801C69FE26D44F3400107CF3 /* Theory */ = {
+			isa = PBXGroup;
+			children = (
+				801C69FF26D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift */,
+			);
+			path = Theory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				801C6A0026D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift in Sources */,
 				801C69F226CF82CF00107CF3 /* ContentView.swift in Sources */,
 				801C69F026CF82CF00107CF3 /* HotProspectsApp.swift in Sources */,
 			);
