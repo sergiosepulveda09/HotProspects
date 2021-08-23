@@ -12,6 +12,7 @@
 		801C69F426CF82D100107CF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801C69F326CF82D100107CF3 /* Assets.xcassets */; };
 		801C69F726CF82D100107CF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801C69F626CF82D100107CF3 /* Preview Assets.xcassets */; };
 		801C6A0026D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C69FF26D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift */; };
+		801C6A0226D4529100107CF3 /* CreatingTabsWithTabViewAndTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C6A0126D4529100107CF3 /* CreatingTabsWithTabViewAndTabItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		801C69F626CF82D100107CF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		801C69F826CF82D100107CF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		801C69FF26D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingCustomValuesEnviromentObject.swift; sourceTree = "<group>"; };
+		801C6A0126D4529100107CF3 /* CreatingTabsWithTabViewAndTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingTabsWithTabViewAndTabItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				801C69FF26D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift */,
+				801C6A0126D4529100107CF3 /* CreatingTabsWithTabViewAndTabItem.swift */,
 			);
 			path = Theory;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				801C6A0226D4529100107CF3 /* CreatingTabsWithTabViewAndTabItem.swift in Sources */,
 				801C6A0026D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift in Sources */,
 				801C69F226CF82CF00107CF3 /* ContentView.swift in Sources */,
 				801C69F026CF82CF00107CF3 /* HotProspectsApp.swift in Sources */,
