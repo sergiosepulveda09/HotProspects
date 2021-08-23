@@ -14,6 +14,7 @@
 		801C6A0026D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C69FF26D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift */; };
 		801C6A0226D4529100107CF3 /* CreatingTabsWithTabViewAndTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C6A0126D4529100107CF3 /* CreatingTabsWithTabViewAndTabItem.swift */; };
 		801C6A0426D45AC100107CF3 /* UnderstandingSwiftResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C6A0326D45AC100107CF3 /* UnderstandingSwiftResultType.swift */; };
+		801C6A0626D4652F00107CF3 /* ManuallyPublishingObservableObjectsChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C6A0526D4652F00107CF3 /* ManuallyPublishingObservableObjectsChange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		801C69FF26D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingCustomValuesEnviromentObject.swift; sourceTree = "<group>"; };
 		801C6A0126D4529100107CF3 /* CreatingTabsWithTabViewAndTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingTabsWithTabViewAndTabItem.swift; sourceTree = "<group>"; };
 		801C6A0326D45AC100107CF3 /* UnderstandingSwiftResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderstandingSwiftResultType.swift; sourceTree = "<group>"; };
+		801C6A0526D4652F00107CF3 /* ManuallyPublishingObservableObjectsChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManuallyPublishingObservableObjectsChange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				801C69FF26D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift */,
 				801C6A0126D4529100107CF3 /* CreatingTabsWithTabViewAndTabItem.swift */,
 				801C6A0326D45AC100107CF3 /* UnderstandingSwiftResultType.swift */,
+				801C6A0526D4652F00107CF3 /* ManuallyPublishingObservableObjectsChange.swift */,
 			);
 			path = Theory;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				801C6A0226D4529100107CF3 /* CreatingTabsWithTabViewAndTabItem.swift in Sources */,
 				801C6A0426D45AC100107CF3 /* UnderstandingSwiftResultType.swift in Sources */,
 				801C6A0026D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift in Sources */,
+				801C6A0626D4652F00107CF3 /* ManuallyPublishingObservableObjectsChange.swift in Sources */,
 				801C69F226CF82CF00107CF3 /* ContentView.swift in Sources */,
 				801C69F026CF82CF00107CF3 /* HotProspectsApp.swift in Sources */,
 			);
