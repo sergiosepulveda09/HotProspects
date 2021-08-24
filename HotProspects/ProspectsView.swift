@@ -13,6 +13,8 @@ struct ProspectsView: View {
         case none, contacted, uncontacted
     }
     
+    @EnvironmentObject var prospects: Prospects
+    
     let filter: FilterType
     var title: String {
         switch filter {
@@ -28,8 +30,17 @@ struct ProspectsView: View {
     
     var body: some View {
         NavigationView {
-            Text("Hello!")
+            Text("People \(prospects.people.count)!")
                 .navigationTitle(title)
+                .navigationBarItems(trailing: Button(action: {
+                    let prospect = Prospect()
+                    prospect.name = "Paul Hudson"
+                    prospect.emailAddress = "paul@hackingwithswift.com"
+                    self.prospects.people.append(prospect)
+                }, label: {
+                    Image(systemName: "qrcode.viewfinder")
+                    Text("Scan")
+                }))
         }
     }
 }
@@ -37,5 +48,6 @@ struct ProspectsView: View {
 struct ProspectsView_Previews: PreviewProvider {
     static var previews: some View {
         ProspectsView(filter: .none)
+            .environmentObject(Prospects())
     }
 }

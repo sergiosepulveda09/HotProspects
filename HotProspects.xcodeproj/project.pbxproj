@@ -22,6 +22,7 @@
 		808C3DEF26D5949C008DCECE /* SwiftDependenciesPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C3DEE26D5949C008DCECE /* SwiftDependenciesPractice.swift */; };
 		808C3DF126D5A194008DCECE /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C3DF026D5A194008DCECE /* ProspectsView.swift */; };
 		808C3DF326D5A19B008DCECE /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C3DF226D5A19B008DCECE /* MeView.swift */; };
+		808C3DF526D5AC3A008DCECE /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C3DF426D5AC3A008DCECE /* Prospect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		808C3DEE26D5949C008DCECE /* SwiftDependenciesPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDependenciesPractice.swift; sourceTree = "<group>"; };
 		808C3DF026D5A194008DCECE /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		808C3DF226D5A19B008DCECE /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		808C3DF426D5AC3A008DCECE /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				801C69FE26D44F3400107CF3 /* Theory */,
 				801C69EF26CF82CF00107CF3 /* HotProspectsApp.swift */,
 				801C69F126CF82CF00107CF3 /* ContentView.swift */,
+				808C3DF426D5AC3A008DCECE /* Prospect.swift */,
 				801C69F326CF82D100107CF3 /* Assets.xcassets */,
 				801C69F826CF82D100107CF3 /* Info.plist */,
 				801C69F526CF82D100107CF3 /* Preview Content */,
@@ -187,6 +190,7 @@
 				808C3DF326D5A19B008DCECE /* MeView.swift in Sources */,
 				801C6A0226D4529100107CF3 /* CreatingTabsWithTabViewAndTabItem.swift in Sources */,
 				801C6A0826D4739E00107CF3 /* ControllingImageInterpollationInSwiftUI.swift in Sources */,
+				808C3DF526D5AC3A008DCECE /* Prospect.swift in Sources */,
 				801C6A0426D45AC100107CF3 /* UnderstandingSwiftResultType.swift in Sources */,
 				801C6A0A26D4815E00107CF3 /* CreatingContextMenu.swift in Sources */,
 				801C6A0026D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift in Sources */,
