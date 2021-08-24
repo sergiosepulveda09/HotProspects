@@ -20,6 +20,8 @@
 		801C6A0C26D58D6000107CF3 /* SchedulingLocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C6A0B26D58D6000107CF3 /* SchedulingLocalNotifications.swift */; };
 		808C3DED26D59278008DCECE /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 808C3DEC26D59278008DCECE /* SamplePackage */; };
 		808C3DEF26D5949C008DCECE /* SwiftDependenciesPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C3DEE26D5949C008DCECE /* SwiftDependenciesPractice.swift */; };
+		808C3DF126D5A194008DCECE /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C3DF026D5A194008DCECE /* ProspectsView.swift */; };
+		808C3DF326D5A19B008DCECE /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C3DF226D5A19B008DCECE /* MeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		801C6A0926D4815E00107CF3 /* CreatingContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingContextMenu.swift; sourceTree = "<group>"; };
 		801C6A0B26D58D6000107CF3 /* SchedulingLocalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingLocalNotifications.swift; sourceTree = "<group>"; };
 		808C3DEE26D5949C008DCECE /* SwiftDependenciesPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDependenciesPractice.swift; sourceTree = "<group>"; };
+		808C3DF026D5A194008DCECE /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
+		808C3DF226D5A19B008DCECE /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				801C69F326CF82D100107CF3 /* Assets.xcassets */,
 				801C69F826CF82D100107CF3 /* Info.plist */,
 				801C69F526CF82D100107CF3 /* Preview Content */,
+				808C3DF026D5A194008DCECE /* ProspectsView.swift */,
+				808C3DF226D5A19B008DCECE /* MeView.swift */,
 			);
 			path = HotProspects;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				808C3DF326D5A19B008DCECE /* MeView.swift in Sources */,
 				801C6A0226D4529100107CF3 /* CreatingTabsWithTabViewAndTabItem.swift in Sources */,
 				801C6A0826D4739E00107CF3 /* ControllingImageInterpollationInSwiftUI.swift in Sources */,
 				801C6A0426D45AC100107CF3 /* UnderstandingSwiftResultType.swift in Sources */,
@@ -187,6 +194,7 @@
 				801C6A0626D4652F00107CF3 /* ManuallyPublishingObservableObjectsChange.swift in Sources */,
 				808C3DEF26D5949C008DCECE /* SwiftDependenciesPractice.swift in Sources */,
 				801C69F226CF82CF00107CF3 /* ContentView.swift in Sources */,
+				808C3DF126D5A194008DCECE /* ProspectsView.swift in Sources */,
 				801C69F026CF82CF00107CF3 /* HotProspectsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
