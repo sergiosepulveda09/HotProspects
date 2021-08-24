@@ -17,6 +17,7 @@
 		801C6A0626D4652F00107CF3 /* ManuallyPublishingObservableObjectsChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C6A0526D4652F00107CF3 /* ManuallyPublishingObservableObjectsChange.swift */; };
 		801C6A0826D4739E00107CF3 /* ControllingImageInterpollationInSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C6A0726D4739E00107CF3 /* ControllingImageInterpollationInSwiftUI.swift */; };
 		801C6A0A26D4815E00107CF3 /* CreatingContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C6A0926D4815E00107CF3 /* CreatingContextMenu.swift */; };
+		801C6A0C26D58D6000107CF3 /* SchedulingLocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C6A0B26D58D6000107CF3 /* SchedulingLocalNotifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		801C6A0526D4652F00107CF3 /* ManuallyPublishingObservableObjectsChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManuallyPublishingObservableObjectsChange.swift; sourceTree = "<group>"; };
 		801C6A0726D4739E00107CF3 /* ControllingImageInterpollationInSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllingImageInterpollationInSwiftUI.swift; sourceTree = "<group>"; };
 		801C6A0926D4815E00107CF3 /* CreatingContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingContextMenu.swift; sourceTree = "<group>"; };
+		801C6A0B26D58D6000107CF3 /* SchedulingLocalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingLocalNotifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				801C6A0526D4652F00107CF3 /* ManuallyPublishingObservableObjectsChange.swift */,
 				801C6A0726D4739E00107CF3 /* ControllingImageInterpollationInSwiftUI.swift */,
 				801C6A0926D4815E00107CF3 /* CreatingContextMenu.swift */,
+				801C6A0B26D58D6000107CF3 /* SchedulingLocalNotifications.swift */,
 			);
 			path = Theory;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				801C6A0426D45AC100107CF3 /* UnderstandingSwiftResultType.swift in Sources */,
 				801C6A0A26D4815E00107CF3 /* CreatingContextMenu.swift in Sources */,
 				801C6A0026D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift in Sources */,
+				801C6A0C26D58D6000107CF3 /* SchedulingLocalNotifications.swift in Sources */,
 				801C6A0626D4652F00107CF3 /* ManuallyPublishingObservableObjectsChange.swift in Sources */,
 				801C69F226CF82CF00107CF3 /* ContentView.swift in Sources */,
 				801C69F026CF82CF00107CF3 /* HotProspectsApp.swift in Sources */,
