@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,8 @@
 		801C6A0826D4739E00107CF3 /* ControllingImageInterpollationInSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C6A0726D4739E00107CF3 /* ControllingImageInterpollationInSwiftUI.swift */; };
 		801C6A0A26D4815E00107CF3 /* CreatingContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C6A0926D4815E00107CF3 /* CreatingContextMenu.swift */; };
 		801C6A0C26D58D6000107CF3 /* SchedulingLocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C6A0B26D58D6000107CF3 /* SchedulingLocalNotifications.swift */; };
+		808C3DED26D59278008DCECE /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 808C3DEC26D59278008DCECE /* SamplePackage */; };
+		808C3DEF26D5949C008DCECE /* SwiftDependenciesPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C3DEE26D5949C008DCECE /* SwiftDependenciesPractice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,7 @@
 		801C6A0726D4739E00107CF3 /* ControllingImageInterpollationInSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllingImageInterpollationInSwiftUI.swift; sourceTree = "<group>"; };
 		801C6A0926D4815E00107CF3 /* CreatingContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingContextMenu.swift; sourceTree = "<group>"; };
 		801C6A0B26D58D6000107CF3 /* SchedulingLocalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingLocalNotifications.swift; sourceTree = "<group>"; };
+		808C3DEE26D5949C008DCECE /* SwiftDependenciesPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDependenciesPractice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				808C3DED26D59278008DCECE /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +98,7 @@
 				801C6A0726D4739E00107CF3 /* ControllingImageInterpollationInSwiftUI.swift */,
 				801C6A0926D4815E00107CF3 /* CreatingContextMenu.swift */,
 				801C6A0B26D58D6000107CF3 /* SchedulingLocalNotifications.swift */,
+				808C3DEE26D5949C008DCECE /* SwiftDependenciesPractice.swift */,
 			);
 			path = Theory;
 			sourceTree = "<group>";
@@ -114,6 +119,9 @@
 			dependencies = (
 			);
 			name = HotProspects;
+			packageProductDependencies = (
+				808C3DEC26D59278008DCECE /* SamplePackage */,
+			);
 			productName = HotProspects;
 			productReference = 801C69EC26CF82CF00107CF3 /* HotProspects.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 801C69E326CF82CF00107CF3;
+			packageReferences = (
+				808C3DEB26D59278008DCECE /* XCRemoteSwiftPackageReference "SamplePackage" */,
+			);
 			productRefGroup = 801C69ED26CF82CF00107CF3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -174,6 +185,7 @@
 				801C6A0026D44F5F00107CF3 /* ReadingCustomValuesEnviromentObject.swift in Sources */,
 				801C6A0C26D58D6000107CF3 /* SchedulingLocalNotifications.swift in Sources */,
 				801C6A0626D4652F00107CF3 /* ManuallyPublishingObservableObjectsChange.swift in Sources */,
+				808C3DEF26D5949C008DCECE /* SwiftDependenciesPractice.swift in Sources */,
 				801C69F226CF82CF00107CF3 /* ContentView.swift in Sources */,
 				801C69F026CF82CF00107CF3 /* HotProspectsApp.swift in Sources */,
 			);
@@ -364,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		808C3DEB26D59278008DCECE /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/SamplePackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		808C3DEC26D59278008DCECE /* SamplePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 808C3DEB26D59278008DCECE /* XCRemoteSwiftPackageReference "SamplePackage" */;
+			productName = SamplePackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 801C69E426CF82CF00107CF3 /* Project object */;
 }
