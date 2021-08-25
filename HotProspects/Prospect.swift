@@ -21,21 +21,35 @@ class Prospect: Identifiable, Codable {
 class Prospects: ObservableObject {
     @Published private(set) var people: [Prospect]
     static let saveKey: String = "SavedData"
+    static let dataKey: String = "ProspectData"
     
     init() {
-        if let data = UserDefaults.standard.data(forKey: Self.saveKey) {
-            if let decoded = try? JSONDecoder().decode([Prospect].self, from: data) {
-                self.people = decoded
-                return
-            }
-        }
-        
         self.people = []
+        loadData()
     }
     
     func save() {
-        if let encoded = try? JSONEncoder().encode(people) {
-            UserDefaults.standard.set(encoded, forKey: Self.saveKey)
+        let filename = FileManager.default.getDocumentsDirectory().appendingPathComponent(Self.dataKey)
+        do {
+            let encodedData = try JSONEncoder().encode(self.people)
+            try encodedData.write(to: filename, options: [.atomicWrite, .completeFileProtection])
+            let input = try String(contentsOf: filename)
+            print("THISS IS GONNA BE SAVED!! 😐: \(input)")
+                
+        } catch {
+            print("There was an error saving the data, error \(error.localizedDescription)")
+        }
+        
+        
+    }
+    
+    private func loadData() {
+        let filename = FileManager.default.getDocumentsDirectory().appendingPathComponent(Self.dataKey)
+        do {
+            let data = try Data(contentsOf: filename)
+            self.people = try JSONDecoder().decode([Prospect].self, from: data)
+        } catch {
+            print("Unable to load data")
         }
     }
     
@@ -50,4 +64,15 @@ class Prospects: ObservableObject {
         save()
     }
     
+}
+
+
+extension FileManager {
+    func getDocumentsDirectory() -> URL {
+        // find all possible documents directories for this user
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+
+        // just send back the first one, which ought to be the only one
+        return paths[0]
+    }
 }
