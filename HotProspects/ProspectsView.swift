@@ -46,24 +46,30 @@ struct ProspectsView: View {
         NavigationView {
             List {
                 ForEach(filteredProspects) { prospect in
-                    VStack(alignment: .leading) {
-                        Text(prospect.name)
-                            .font(.headline)
-                        Text(prospect.emailAddress)
-                            .foregroundColor(.secondary)
-                        
-                    }
-                    .contextMenu(ContextMenu(menuItems: {
-                        Button(prospect.isContacted ? "Mark Uncontacted" : "Mark contacted") {
-                            self.prospects.toggle(prospect)
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(prospect.name)
+                                .font(.headline)
+                            Text(prospect.emailAddress)
+                                .foregroundColor(prospect.getContactedStatus() ? .secondary : .red.opacity(0.8))
+                            
+                            
                         }
-                        
-                        if !prospect.isContacted {
-                            Button("Remind me") {
-                                self.addNotification(for: prospect)
+                        .foregroundColor(prospect.getContactedStatus() ? .none : .red.opacity(0.8))
+                        .contextMenu(ContextMenu(menuItems: {
+                            Button(prospect.isContacted ? "Mark Uncontacted" : "Mark contacted") {
+                                self.prospects.toggle(prospect)
                             }
-                        }
+                            
+                            if !prospect.isContacted {
+                                Button("Remind me") {
+                                    self.addNotification(for: prospect)
+                                }
+                            }
                     }))
+                        Image(systemName: prospect.getContactedStatus() ? "phone.fill" : "exclamationmark.bubble.fill")
+                            .foregroundColor(prospect.getContactedStatus() ? .none : .red.opacity(0.8))
+                    }
                 }
             }
             .navigationTitle(title)

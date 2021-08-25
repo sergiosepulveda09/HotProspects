@@ -12,6 +12,10 @@ class Prospect: Identifiable, Codable {
     var name: String = "Anonymous"
     var emailAddress: String = ""
     fileprivate(set) var isContacted: Bool = false
+    
+    func getContactedStatus() -> Bool {
+        return isContacted
+    }
 }
 
 class Prospects: ObservableObject {
@@ -45,4 +49,5 @@ class Prospects: ObservableObject {
         prospect.isContacted.toggle()
         save()
     }
+    
 }
