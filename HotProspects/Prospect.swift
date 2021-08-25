@@ -8,10 +8,12 @@
 import SwiftUI
 
 class Prospect: Identifiable, Codable {
+    
     var id: UUID = UUID()
     var name: String = "Anonymous"
     var emailAddress: String = ""
     fileprivate(set) var isContacted: Bool = false
+    var date: Date = Date()
     
     func getContactedStatus() -> Bool {
         return isContacted
@@ -22,6 +24,10 @@ class Prospects: ObservableObject {
     @Published private(set) var people: [Prospect]
     static let saveKey: String = "SavedData"
     static let dataKey: String = "ProspectData"
+    
+    enum SortedBy {
+        case name, date
+    }
     
     init() {
         self.people = []
@@ -62,6 +68,17 @@ class Prospects: ObservableObject {
         objectWillChange.send()
         prospect.isContacted.toggle()
         save()
+    }
+    
+    func sortBy(sortedBy: SortedBy)  {
+        objectWillChange.send()
+        switch sortedBy {
+        case .name:
+            self.people = people.sorted{ $0.name < $1.name }
+        case .date:
+            self.people = people.sorted { $0.date < $1.date }
+        }
+        
     }
     
 }

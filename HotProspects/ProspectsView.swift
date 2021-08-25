@@ -15,8 +15,12 @@ struct ProspectsView: View {
         case none, contacted, uncontacted
     }
     
+    
     @EnvironmentObject var prospects: Prospects
     @State private var isShowingScanner: Bool = false
+    @State private var isShowingFilters: Bool = false
+    @State private var sortingCriteria = "none"
+    
     let filter: FilterType
     var title: String {
         switch filter {
@@ -52,7 +56,7 @@ struct ProspectsView: View {
                                 .font(.headline)
                             Text(prospect.emailAddress)
                                 .foregroundColor(prospect.getContactedStatus() ? .secondary : .red.opacity(0.8))
-                            
+                            Text(prospect.date, style: .time)
                             
                         }
                         .foregroundColor(prospect.getContactedStatus() ? .none : .red.opacity(0.8))
@@ -73,14 +77,35 @@ struct ProspectsView: View {
                 }
             }
             .navigationTitle(title)
-            .navigationBarItems(trailing: Button(action: {
+            .navigationBarItems(leading: Button(action: {
+                self.isShowingFilters = true
+            }, label: {
+                VStack {
+                    Image(systemName: "circle.grid.cross.up.fill")
+                    Text("Filter")
+                }
+            }), trailing: Button(action: {
                 self.isShowingScanner = true
             }, label: {
-                Image(systemName: "qrcode.viewfinder")
-                Text("Scan")
+                VStack {
+                    Image(systemName: "qrcode.viewfinder")
+                    Text("Scan")
+                }
             }))
             .sheet(isPresented: $isShowingScanner) {
                 CodeScannerView(codeTypes: [.qr], simulatedData: "Sergio Sepulveda\nsergiosepulveda09@live.com", completion: self.handleScan)
+            }
+            .actionSheet(isPresented: $isShowingFilters) {
+                ActionSheet(title: Text("Sort by"), message: Text("Choose a criteria to filter your results, current: \(sortingCriteria)"), buttons: [
+                .default(Text("Name")) {
+                    prospects.sortBy(sortedBy: .name)
+                    self.sortingCriteria = "Name"
+                },
+                .default(Text("Date created")) {
+                    prospects.sortBy(sortedBy: .date)
+                    self.sortingCriteria = "Date"
+                },
+                .cancel()])
             }
         }
     }
